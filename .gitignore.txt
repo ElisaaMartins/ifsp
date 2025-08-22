@@ -1,0 +1,3 @@
+# Arquivos binários de executáveis e objetos
+*.exe
+*.o
