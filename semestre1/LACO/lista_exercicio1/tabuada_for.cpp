@@ -1,3 +1,5 @@
+/* 1 - Crie um algoritmo de mostre na tela a tabuada do 1 ao 10 (utilizando a estrutura for) */
+
 #include <iostream>
 
 using namespace std;
