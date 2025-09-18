@@ -6,7 +6,7 @@ using namespace std;
 
 int main (){
 
-	int numeroInicial,razao;
+	int numeroInicial, razao;
 		
 	cout << "digite um numero:" << endl;
 	cin >> numeroInicial;
