@@ -1,3 +1,4 @@
+// faz uma listagem de alunos e suas medias
 #include <iostream>
 
 using namespace std;
@@ -22,6 +23,7 @@ int main () {
 		media[i] = (n1[i] + n2[i]) / 2;
 	}
 	
+	cout << endl;
 	cout << "LISTAGEM DE ALUNOS" << endl;
 	cout << endl;
 	

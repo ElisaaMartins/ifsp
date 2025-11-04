@@ -1,3 +1,4 @@
+// faz uma listagem de alunos e suas medias e fala quais alunos ficaram acima da media da turma
 #include <iostream>
 
 using namespace std;

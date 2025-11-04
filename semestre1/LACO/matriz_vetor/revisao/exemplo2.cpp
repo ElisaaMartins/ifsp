@@ -1,3 +1,4 @@
+// 7 valores e falar quantos são pares e em que posicao estao
 #include <iostream>
 
 using namespace std;

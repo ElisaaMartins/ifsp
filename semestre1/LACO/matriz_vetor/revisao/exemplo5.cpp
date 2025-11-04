@@ -1,3 +1,4 @@
+// 10 nomes e faz uma listagem só com aqueles que começam com C
 #include <iostream>
 #include <string>
 #include <cctype> // para toupper
