@@ -5,7 +5,7 @@
 using namespace std;
 
 int main(void) {
-        int vector[] = {1, 7, 3, 8, 3, 7, 1};
+        int vector[] = {1, 7, 3, 8, 7, 1};
 
         bool ispalindrome = true;
 

@@ -1,4 +1,4 @@
-// Exercício 1: Operações Aritméticas Básicas
+// Exercicio 1: Operacoes Aritmeticas Basicas
 
 #include <iostream>
 
