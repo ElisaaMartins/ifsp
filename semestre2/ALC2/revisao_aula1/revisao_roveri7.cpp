@@ -1,3 +1,5 @@
+/* 7. Escreva um algoritmo que leia 10 valores e encontre o maior e o menor deles */
+
 #include <iostream>
 
 using namespace std;
