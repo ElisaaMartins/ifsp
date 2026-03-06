@@ -46,6 +46,8 @@ int main (){
 
         cout << "Valor unitario: ";
         cin >> nota.itens[i].valor_unitario;
+
+        cout << endl;
 }
 
     system("cls");
@@ -58,19 +60,23 @@ int main (){
 
     cout << "=== ITENS ===" << endl;
 
+
+    cout << "\tNumero\tProduto\tQuant\tValor\tTotal" << endl;
+
     for (int i = 0; i < QTD_ITENS; i++){
-        /*cout << "Numero|\t Produto|\t Quantidade|\t Valor Unitario|\t Valor Total" << endl;
-
-        cout << "\t" << nota.itens[i].numero << " |\t" << nota.itens[i].produto << " |\t" <<  nota.itens[i].qtd << " |\t"
-        << nota.itens[i].valor_unitario << " |\t" << (nota.itens[i].qtd * nota.itens[i].valor_unitario);*/
-
-
+        cout << "\t" << nota.itens[i].numero << "\t"
+             << nota.itens[i].produto << "\t"
+             << nota.itens[i].qtd << "\t"
+             << nota.itens[i].valor_unitario << "\t"
+             << (nota.itens[i].qtd * nota.itens[i].valor_unitario);
+        /*
         cout << "\t Numero: " << nota.itens[i].numero << endl;
         cout << "\t Produto: " << nota.itens[i].produto << endl;
         cout << "\t Quantidade: " << nota.itens[i].qtd << endl;
         cout << "\t Valor Unitario: " << nota.itens[i].valor_unitario << endl;
 
         cout << "\t Valor total: " << (nota.itens[i].qtd * nota.itens[i].valor_unitario) << endl;
+        */
 
         cout << endl;
     }
