@@ -2,7 +2,11 @@
 
 using namespace std;
 
+<<<<<<< HEAD
 const int QTD_ITENS = 2;
+=======
+const int QTD_ITENS = 3;
+>>>>>>> 6ffb01cda10d0af96e9f2ed1e032f1bf23ad794a
 
 struct Item {
     int numero;
@@ -18,6 +22,7 @@ struct Nota {
     Item itens[QTD_ITENS];
 };
 
+<<<<<<< HEAD
 
 void getNota(Nota pNota){
     system("cls");
@@ -61,6 +66,8 @@ void getNota(Nota pNota){
 }
 
 
+=======
+>>>>>>> 6ffb01cda10d0af96e9f2ed1e032f1bf23ad794a
 int main (){
     Nota nota;
 
@@ -91,7 +98,43 @@ int main (){
         cin >> nota.itens[i].valor_unitario;
 
         cout << endl;
+<<<<<<< HEAD
     }
 
     getNota(nota);
+=======
+}
+
+    system("cls");
+
+    cout << "NF: " << nota.numero << endl;
+    cout << "Empresa: " << nota.empresa << endl;
+    cout << "Data Emissao: " << nota.data << endl;
+
+    cout << endl;
+
+    cout << "=== ITENS ===" << endl;
+
+
+    cout << "\tNumero\tProduto\tQuant\tValor\tTotal" << endl;
+
+    for (int i = 0; i < QTD_ITENS; i++){
+        cout << "\t" << nota.itens[i].numero << "\t"
+             << nota.itens[i].produto << "\t"
+             << nota.itens[i].qtd << "\t"
+             << nota.itens[i].valor_unitario << "\t"
+             << (nota.itens[i].qtd * nota.itens[i].valor_unitario);
+        /*
+        cout << "\t Numero: " << nota.itens[i].numero << endl;
+        cout << "\t Produto: " << nota.itens[i].produto << endl;
+        cout << "\t Quantidade: " << nota.itens[i].qtd << endl;
+        cout << "\t Valor Unitario: " << nota.itens[i].valor_unitario << endl;
+
+        cout << "\t Valor total: " << (nota.itens[i].qtd * nota.itens[i].valor_unitario) << endl;
+        */
+
+        cout << endl;
+    }
+
+>>>>>>> 6ffb01cda10d0af96e9f2ed1e032f1bf23ad794a
 }

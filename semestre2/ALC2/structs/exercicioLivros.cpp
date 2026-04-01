@@ -111,7 +111,11 @@ int main() {
 			case 3: getLivro(livros);
 					break;
 			default: cout << "Opcao incorreta" << endl;
+<<<<<<< HEAD
                     break;
+=======
+					 break;
+>>>>>>> 6ffb01cda10d0af96e9f2ed1e032f1bf23ad794a
 		}
 
 		cout << endl;

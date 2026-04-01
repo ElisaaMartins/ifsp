@@ -2,10 +2,17 @@
 
 using namespace std;
 
+<<<<<<< HEAD
 /*void maiorMenor (int valores[], int tamanho){
 
 	int maior = valores[0], menor = valores[0];
 
+=======
+void maiorMenor (int valores[], int tamanho){
+	
+	int maior = valores[0], menor = valores[0];
+	
+>>>>>>> 6ffb01cda10d0af96e9f2ed1e032f1bf23ad794a
 	for(int i = 0; i < tamanho; i++){
 		cout << valores[i] << "\t";
 	if(maior < valores[i]){
@@ -15,6 +22,7 @@ using namespace std;
 		menor = valores[i];
 	}
 	}
+<<<<<<< HEAD
 
 	cout << endl;
 
@@ -46,4 +54,20 @@ int main () {
 	cout << endl << "O maior valor e " << maior << endl;
 	cout << "O menor valor e " << menor << endl;
 
+=======
+	
+	cout << endl;
+	
+	cout << endl << "O maior valor e " << maior << endl;
+	cout << "O menor valor e " << menor << endl;
+}
+
+
+int main () {
+	
+	int valores[10] = {6, 0, 22, -10, 50, 4, -2, 0, 18, -5};
+	
+	
+	maiorMenor(valores, 10);
+>>>>>>> 6ffb01cda10d0af96e9f2ed1e032f1bf23ad794a
 }
