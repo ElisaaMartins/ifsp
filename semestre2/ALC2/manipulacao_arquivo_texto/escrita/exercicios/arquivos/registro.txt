@@ -1,0 +1,4 @@
+aluno: teste nota1: 10 nota2: 10 nota3: 10 media: 6.95138e-310
+aluno: teste nota1: 10 nota2: 10 nota3: 10 media: 6.95138e-310
+aluno: testeee nota1: 2 nota2: 4 nota3: 6 media: 0
+aluno: testeee nota1: 2 nota2: 4 nota3: 6 media: 0

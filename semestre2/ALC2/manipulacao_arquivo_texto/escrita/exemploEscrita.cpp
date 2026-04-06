@@ -28,7 +28,7 @@ int main(){
     /*arquivo << "IFS" << endl;
     arquivo << "Aula de algoritmos 2";*/
 
-    arquivo << aluno.nome << ";" << aluno.idade << ";" << aluno.curso;
+    arquivo << aluno.nome << " ;" << aluno.idade << " ;" << aluno.curso;
 
     // 4 - fechar arquivo para aescrita
     arquivo.close();
