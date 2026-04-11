@@ -1,6 +1,15 @@
 #include <iostream>
 using namespace std;
 
+/* STRUCTS
+
+Empresa
+ ├── Filiais (até 5)
+      ├── Departamentos (até 3 por filial)
+           ├── Funcionários (até 6 por departamento)
+*/
+
+
 struct Funcionario {
     string nome;
     int idade;
@@ -13,7 +22,7 @@ struct Departamento {
     string descricao;
     string sigla;
     Funcionario funcionario[6];
-    int qtdFuncionarios;
+    int qtdFuncionarios; // controla quantos foram realmente preenchidos
 };
 
 struct Filial {
@@ -21,7 +30,7 @@ struct Filial {
     string cidade;
     string ramo;
     Departamento departamento[3];
-    int qtdDepartamentos;
+    int qtdDepartamentos; // contador departamentos
 };
 
 struct Empresa {
@@ -33,7 +42,7 @@ struct Empresa {
 
 int main(){
     Empresa empresa;
-    double totalSalario = 0;
+    double totalSalario = 0; // somar todos os salários
 
     // Dados da empresa
     cout << "Nome da empresa: ";
@@ -62,7 +71,7 @@ int main(){
         getline(cin, empresa.filial[i].ramo);
 
         cout << "Quantidade de departamentos (max 3): ";
-        cin >> empresa.filial[i].qtdDepartamentos;
+        cin >> empresa.filial[i].qtdDepartamentos; // quantos departamentos essa filial vai ter
 
         cout << endl;
 
@@ -81,11 +90,11 @@ int main(){
             getline(cin, empresa.filial[i].departamento[j].sigla);
 
             cout << "Quantidade de funcionarios (max 6): ";
-            cin >> empresa.filial[i].departamento[j].qtdFuncionarios;
+            cin >> empresa.filial[i].departamento[j].qtdFuncionarios; // quantos funcionários tem
 
             cout << endl;
 
-            // Loop de funcion�rios
+            // Loop de funcionários
             for(int k = 0; k < empresa.filial[i].departamento[j].qtdFuncionarios; k++){
                 cout << "=== FUNCIONARIO " << k+1 << " ===" << endl;
 
@@ -103,23 +112,26 @@ int main(){
                 cout << "Salario: ";
                 cin >> empresa.filial[i].departamento[j].funcionario[k].salario;
 
-                totalSalario += empresa.filial[i].departamento[j].funcionario[k].salario;
+                totalSalario += empresa.filial[i].departamento[j].funcionario[k].salario; // soma do salário // acumula
             }
         }
     }
 
     cout << endl;
 
-    // RELAT�RIO
+    // comeca o relatório final
     cout << "===== RELATORIO =====" << endl;
 
+    // loop novamente nas filiais
     for(int i = 0; i < 5; i++){
         cout << "Filial: " << empresa.filial[i].cidade << endl;
 
+        // loop nos departamentos
         for(int j = 0; j < empresa.filial[i].qtdDepartamentos; j++){
             cout << "Departamento: "
                  << empresa.filial[i].departamento[j].sigla << endl;
 
+            // loop nos funcionários
             for(int k = 0; k < empresa.filial[i].departamento[j].qtdFuncionarios; k++){
                 cout << " Funcionario: "
                      << empresa.filial[i].departamento[j].funcionario[k].nome
@@ -132,5 +144,6 @@ int main(){
         }
     }
 
+    // total final
     cout << "Folha total da empresa: " << totalSalario << endl;
 }

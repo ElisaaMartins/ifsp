@@ -1,0 +1,2 @@
+oi;10;quinta-feira
+tchau;20;sexta-feira
