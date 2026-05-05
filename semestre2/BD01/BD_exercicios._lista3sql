@@ -1,0 +1,123 @@
+-- LISTA DE EXERCICIO 3
+-- 1 (conta e cliente)
+CREATE DATABASE banco_lista3;
+
+\c banco_lista3
+
+CREATE TABLE cliente (
+	codigo INT,
+	CPF INT,
+	nome VARCHAR(100),
+	data_nascimento DATE,
+	ID_conta INT,
+	PRIMARY KEY(codigo)
+);
+
+CREATE TABLE conta (
+	ID INT,
+	numero_agencia INT,
+	data_abertura DATE,
+	saldo_atual DECIMAL(15, 2),
+	limite_especial DECIMAL(20, 2),
+	codigo_cliente INT,
+	PRIMARY KEY(ID),
+	FOREIGN KEY (codigo_cliente) REFERENCES cliente (codigo)
+);
+
+INSERT INTO cliente VALUES
+	(11, 1234, 'José', '1991-01-01'),
+	(15, 2345, 'Maria', '1992-02-02');
+	
+INSERT INTO conta VALUES
+	(1, 123, '2005-12-02', 0.00, 1000.00),
+	(2, 123, '2006-03-03', 100.00, 2000.00),
+	(3, 234, '2007-04-04', 150.00, 1500.00);
+	
+
+UPDATE cliente SET ID_conta = 1 WHERE codigo = 11;
+UPDATE cliente SET ID_conta = 2 WHERE codigo = 15;
+
+UPDATE cliente SET ID_conta = 3 WHERE codigo = 15;
+
+-- 2 (projeto e setor)
+CREATE DATABASE projetos_lista3;
+
+\c projetos_lista3
+
+CREATE TABLE setor (
+	codigo INT,
+	nome_setor VARCHAR(100),
+	PRIMARY KEY(codigo)
+);
+
+
+CREATE TABLE projeto (
+	ID INT,
+	nome_projeto VARCHAR(100),
+	data_inicio DATE,
+	data_termino DATE,
+	codigo_setor INT,
+	PRIMARY KEY(ID),
+	FOREIGN KEY (codigo_setor) REFERENCES setor (codigo)
+);
+
+INSERT INTO setor VALUES 
+	(101, 'Alfa'),
+	(102, 'Delta'), 
+	(103, 'Ômega')
+;
+
+INSERT INTO projeto VALUES
+	(1, 'Nova Iorque', '2015-01-01', '2015-10-20'),
+	(2, 'Los Angeles', '2015-08-01', '2016-02-20'),
+	(3, 'Tóquio',      '2016-03-01', '2017-10-15'),
+	(4, 'Pequim',      '2017-02-01', '2017-10-15')
+;
+
+UPDATE projeto SET codigo_setor = 101 WHERE ID = 1;
+
+
+UPDATE projeto SET codigo_setor = 103 WHERE ID = 2;
+UPDATE projeto SET codigo_setor = 103 WHERE ID = 4;
+
+
+-- 3 (filme e diretor)
+CREATE DATABASE videoteca_lista3;
+
+\c videoteca_lista3
+
+CREATE TABLE diretor (
+	codigo INT,
+	nome_artistico VARCHAR(100),
+	data_nascimento DATE,
+	pais_nascimento VARCHAR(100),
+	PRIMARY KEY (codigo)
+);
+
+CREATE TABLE  filme (
+	codigo INT,
+	titulo_original VARCHAR(100),
+	titulo_portugues VARCHAR(100),
+	ano_lancamento INT,
+	nota INT,
+	diretor INT,
+	PRIMARY KEY (codigo),
+	FOREIGN KEY (diretor) REFERENCES diretor (codigo)
+);
+
+
+INSERT INTO filme VALUES 
+	(1, 'The origin', 'A origem', 2000, 8),
+	(2, 'The beginning', 'O início', 2002, 6),
+	(3, 'The end', 'O fim', 2004, 5)
+;
+	
+	
+INSERT into diretor VALUES
+	(10, 'John Smith', '1980-03-20', 'Estados Unidos'),
+	(11, 'Jose da Silva', '1985-09-15', 'Brasil')
+;
+
+UPDATE filme SET diretor = 10 WHERE codigo = 1;
+UPDATE filme SET diretor = 11 WHERE codigo = 2;
+UPDATE filme SET diretor = 11 WHERE codigo = 3;
