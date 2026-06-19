@@ -9,7 +9,6 @@ CREATE TABLE cliente (
 	CPF INT,
 	nome VARCHAR(100),
 	data_nascimento DATE,
-	ID_conta INT,
 	PRIMARY KEY(codigo)
 );
 
@@ -86,14 +85,6 @@ CREATE DATABASE videoteca_lista3;
 
 \c videoteca_lista3
 
-CREATE TABLE diretor (
-	codigo INT,
-	nome_artistico VARCHAR(100),
-	data_nascimento DATE,
-	pais_nascimento VARCHAR(100),
-	PRIMARY KEY (codigo)
-);
-
 CREATE TABLE  filme (
 	codigo INT,
 	titulo_original VARCHAR(100),
@@ -102,8 +93,20 @@ CREATE TABLE  filme (
 	nota INT,
 	diretor INT,
 	PRIMARY KEY (codigo),
-	FOREIGN KEY (diretor) REFERENCES diretor (codigo)
+	
 );
+
+CREATE TABLE diretor (
+	codigo INT,
+	nome_artistico VARCHAR(100),
+	data_nascimento DATE,
+	pais_nascimento VARCHAR(100),
+	codigo_filme INT,
+	PRIMARY KEY (codigo),
+	FOREIGN KEY (codigo_filme) REFERENCES filme (codigo)
+);
+
+
 
 
 INSERT INTO filme VALUES 
