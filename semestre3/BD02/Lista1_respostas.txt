@@ -1,0 +1,54 @@
+Lista 1 (extra)
+1
+b) n – m <= 1           | 2 - 1 <= 1 (VERDADEIRO) 	*
+c) p + m = 2            | -3 + 1 = -2 (FALSO)
+d) o – 2 <> n           | 4 - 2 diferente 2 (FALSO)
+e) q + o = -1           | -5 + 4 = -1 (VERDADEIRO)
+f) r * 2 <= 0           | 0 * 2 <= 0 (VERDADEIRO) 	*
+g) o + q > m - n        | 4 + (-5) > 1 - 2 => -1 > -1 (FALSO)
+h) p * o >= q * n + 2   | -3 * 4 >= -5 * 2 + 2 => -12 >= -12 (FALSO)
+
+2
+b) V AND F 				(FALSO)
+c) NOT V   				(FALSO) 	*
+d) V AND V OR F 			(VERDADEIRO)	
+e) V OR V AND F 			(VERDADEIRO)	*
+f) V AND V AND F 			(FALSO)
+g) NOT F OR V 				(VERDADEIRO)
+h) V AND V OR F AND F 			(VERDADEIRO)	*
+i) V OR F OR F OR F OR F OR F OR F 	(VERDADEIRO)
+j) F AND V AND V AND F AND V AND NOT F 	(FALSO)		*
+
+3
+b) V OR (V AND F)  				| V OR F (VERDADEIRO)
+c) V AND (V AND F) 				| V AND F (FALSO) 
+d) NOT F OR V      				| V OR V (VERDADEIRO)
+e) V AND (V OR F) AND F 			| V AND V AND F (FALSO)
+f) (V OR F) OR (F AND F) OR F OR (F OR F) 	| V OR F OR F OR F (VERDADEIRO)
+g) F AND (V AND V) OR (F AND V) AND NOT F 	| F AND V OR F AND V (FALSO)
+h) V OR (F OR V) AND ((V OR F) AND (F AND F)) 	| V OR V AND V AND F (VERDADEIRO) *
+
+4
+b) t = 2 OR w + 2 = x 				| 2 = 2 OR -2 + 2 = 0 V AND V (VERDADEIRO)
+c) t = u OR NOT (w > 0)				| 2 = 3 OR NOT (-2 > 0) F OR NOT V F OR F (VERDADEIRO) 	*
+d) NOT (s – u = -2) AND NOT (t * 1 = x)		| NOT (1 - 3 = -2) AND NOT (2 * 1 = 0) NOT V AND NOT F F AND V (FALSO)
+e) (V AND w > 3) OR (NOT (F) AND s + t = u)	| (V AND -2 > 3) OR (NOT (F) AND 1 + 2 = 3) V AND V OR V AND V (VERDADEIRO)
+
+5
+b) salario >= 1500.00 AND idade <>20
+	1º Registro: 1 = salario = 2000 (V) AND idade <> 18 (V) (VERDADEIR0)
+	2º Registro: 2 = salario = 1500 (V) AND idade <> 20 (F) (FALSO)
+	3º Registro: 3 = salario = 1000 (F) AND idade <> 21 (V) (FALSO)
+	4º Registro: 4 = salario = 1750 (V) AND idade <> 24 (V) (VERDADEIRO)
+
+c) NOT salario < 1600.00 OR NOT nome = ‘André’
+	1º Registro: 1 = salario = 2000 (V) OR  nome = André (V) (VERDADEIRO)
+	2º Registro: 2 = salario = 1500 (F) OR  nome = Breno (F) (VERDADEIRO)	*
+	3º Registro: 3 = salario = 1000 (F) OR  nome = Cícero (F) (VERDADEIRO)	*
+	4º Registro: 4 = salario = 1750 (V) OR  nome = Diógenes (F) (VERDADEIRO)
+
+d) (idade = 18 AND salario > 1300.00) OR (idade >= 20 AND salario < 2000.00)
+	1º Registro: 1 = salario = 2000 (F) AND idade = 18 (V) OR idade = 18 (V) AND salario = 2000 (F) = VERDADEIRO
+	2º Registro: 2 = salario = 1500 (F) AND idade = 20 (F) OR idade = 20 (V) AND salario = 1500 (V) = VERDADEIRO *
+	3º Registro: 3 = salario = 1000 (V) AND idade = 21 (F) OR idade = 21 (F) AND salario = 1000 (V) = VERDADEIRO *
+	4º Registro: 4 = salario = 1750 (F) AND idade = 24 (F) OR idade = 24 (F) AND salario = 1750 (V) = VERDADEIRO *
