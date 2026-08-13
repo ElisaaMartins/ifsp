@@ -3,14 +3,14 @@ create database clinica;
 \c clinica
 
 create table especialidade (
-	codigo int, 
+	codigo serial, 
 	nome_e varchar(100), 
 	descricao varchar(500),
 	PRIMARY key (codigo)
 );
 
 create table medico (
-	id_m int, 
+	id_m serial, 
 	nome_m varchar(100), 
 	num_registro int,
 	data_nasc_m date,
@@ -18,7 +18,7 @@ create table medico (
 );
 
 create table paciente (
-	id_p int, 
+	id_p serial, 
 	nome_p varchar(100), 
 	data_nasc_p date,
 	endereco varchar(200),
@@ -26,7 +26,7 @@ create table paciente (
 );
 
 create table consulta (
-	id_c int, 
+	id_c serial, 
 	medico_id int,
 	paciente_id int,
 	data_hora_agend TIMESTAMP,
@@ -38,7 +38,7 @@ create table consulta (
 );
 
 create table tem_especialidade (
-	id int, 
+	id serial, 
 	espec_cod int,
 	medico_id int,
 	PRIMARY key (id),
@@ -82,4 +82,11 @@ INSERT into tem_especialidade VALUES
 SELECT * from paciente;
 SELECT * from especialidade;
 SELECT * from medico;
-SELECT * from consulta;
+SELECT * from medico;
+
+-- Alterando dados de uma tabela
+ALTER table consulta ALTER COLUMN medico_id TYPE int;
+ALTER table consulta ALTER COLUMN paciente_id TYPE int;
+
+ALTER table tem_especialidade ALTER COLUMN espec_cod TYPE int;
+ALTER table tem_especialidade ALTER COLUMN medico_id TYPE int;
