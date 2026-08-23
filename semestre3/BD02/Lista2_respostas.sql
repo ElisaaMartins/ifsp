@@ -12,7 +12,9 @@ SELECT codigo, nome_e from especialidade;
 
 SELECT nome_p, data_nasc_p from paciente where data_nasc_p < '1990-01-01';
 
-select nome_m, num_registro from medico where num_registro BETWEEN 10000 and 19999;
+select nome_m, num_registro from medico where num_registro >= 10000 and num_registro <= 19999;
+-- OU
+-- select nome_m, num_registro from medico where num_registro BETWEEN 10000 and 19999;
 
 select id_c, paciente_id, data_hora_agend from consulta where medico_id = 1;
 
@@ -24,5 +26,7 @@ select * from paciente where nome_p like '%José%' OR
 							 nome_p like '%João%';
 
 select * from paciente where nome_p similar to '%(José|João)%';
+-- OU 
+-- select * from paciente where nome_p similar to '%(Jo(sé|ão)%';
 
 
