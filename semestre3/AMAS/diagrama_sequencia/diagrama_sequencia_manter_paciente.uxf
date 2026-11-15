@@ -1,0 +1,83 @@
+<diagram program="umletino" version="15.1"><zoom_level>11</zoom_level><help_text>farmaceutico (ator)
+</help_text><element><id>Relation</id><coordinates><x>154</x><y>22</y><w>33</w><h>1441</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;1290</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>99</x><y>0</y><w>143</w><h>33</h></coordinates><panel_attributes>usuario (ator)
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>539</x><y>0</y><w>110</w><h>33</h></coordinates><panel_attributes>:telaConsulta
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>682</x><y>0</y><w>110</w><h>33</h></coordinates><panel_attributes>:telaAlteração</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1034</x><y>0</y><w>154</w><h>44</h></coordinates><panel_attributes>:tela
+controlePacientes
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>583</x><y>22</y><w>33</w><h>1419</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;1270</additional_attributes></element><element><id>Relation</id><coordinates><x>726</x><y>22</y><w>33</w><h>1419</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;1270</additional_attributes></element><element><id>Relation</id><coordinates><x>1111</x><y>33</y><w>33</w><h>1408</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;1260</additional_attributes></element><element><id>Relation</id><coordinates><x>154</x><y>55</y><w>264</w><h>55</h></coordinates><panel_attributes>lt=&lt;&lt;-
+acessarPacientes()
+</panel_attributes><additional_attributes>220;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>869</x><y>0</y><w>110</w><h>33</h></coordinates><panel_attributes>:telaErro</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>913</x><y>22</y><w>33</w><h>1419</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;1270</additional_attributes></element><element><id>Relation</id><coordinates><x>33</x><y>143</y><w>1397</w><h>44</h></coordinates><panel_attributes>lt=-
+</panel_attributes><additional_attributes>10;20;1250;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>330</x><y>0</y><w>143</w><h>33</h></coordinates><panel_attributes>:telaPacientes
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>396</x><y>77</y><w>22</w><h>77</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>396</x><y>22</y><w>33</w><h>1441</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;1290</additional_attributes></element><element><id>Relation</id><coordinates><x>154</x><y>132</y><w>264</w><h>55</h></coordinates><panel_attributes>lt=&lt;&lt;-
+selecionarOperação()
+</panel_attributes><additional_attributes>220;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>154</x><y>165</y><w>264</w><h>55</h></coordinates><panel_attributes>lt=&lt;&lt;-
+CadastrarPaciente()
+</panel_attributes><additional_attributes>220;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>154</x><y>231</y><w>264</w><h>66</h></coordinates><panel_attributes>lt=&lt;&lt;-
+informaDadosPaciente
+(Nome, CPF, Nascimento, Telefone)
+</panel_attributes><additional_attributes>220;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>396</x><y>187</y><w>22</w><h>330</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>924</x><y>264</y><w>209</w><h>55</h></coordinates><panel_attributes>lt=&lt;&lt;-
+erro
+</panel_attributes><additional_attributes>10;20;170;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1111</x><y>264</y><w>22</w><h>231</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>154</x><y>583</y><w>451</w><h>55</h></coordinates><panel_attributes>lt=&lt;&lt;-
+consultarPaciente()
+</panel_attributes><additional_attributes>390;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>33</x><y>781</y><w>1364</w><h>44</h></coordinates><panel_attributes>lt=-
+</panel_attributes><additional_attributes>10;20;1220;20</additional_attributes></element><element><id>Relation</id><coordinates><x>154</x><y>1408</y><w>275</w><h>55</h></coordinates><panel_attributes>lt=&lt;&lt;-
+retornarListaOperações()
+</panel_attributes><additional_attributes>230;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>154</x><y>605</y><w>451</w><h>55</h></coordinates><panel_attributes>lt=&lt;-
+solicitarDadosPaciente()
+</panel_attributes><additional_attributes>10;20;390;20</additional_attributes></element><element><id>Relation</id><coordinates><x>154</x><y>627</y><w>451</w><h>55</h></coordinates><panel_attributes>lt=&lt;&lt;-
+informarDadosPaciente
+(Nome ou CPF)</panel_attributes><additional_attributes>390;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>594</x><y>649</y><w>539</w><h>55</h></coordinates><panel_attributes>lt=&lt;&lt;-
+consultarPaciente(dados)
+</panel_attributes><additional_attributes>470;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>154</x><y>814</y><w>264</w><h>55</h></coordinates><panel_attributes>lt=&lt;&lt;-
+selecionarPaciente()
+</panel_attributes><additional_attributes>220;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1111</x><y>671</y><w>22</w><h>77</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>407</x><y>66</y><w>726</w><h>55</h></coordinates><panel_attributes>lt=&lt;&lt;-
+consultarPacientes()
+</panel_attributes><additional_attributes>640;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1111</x><y>77</y><w>22</w><h>33</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>407</x><y>88</y><w>726</w><h>55</h></coordinates><panel_attributes>lt=&lt;.
+pacientes()
+</panel_attributes><additional_attributes>10;20;640;20</additional_attributes></element><element><id>Relation</id><coordinates><x>154</x><y>99</y><w>264</w><h>44</h></coordinates><panel_attributes>lt=&lt;.
+pacientess()</panel_attributes><additional_attributes>10;20;220;20</additional_attributes></element><element><id>Relation</id><coordinates><x>154</x><y>198</y><w>264</w><h>55</h></coordinates><panel_attributes>lt=&lt;&lt;-
+soliciatrDadosPaciente()
+</panel_attributes><additional_attributes>10;20;220;20</additional_attributes></element><element><id>Relation</id><coordinates><x>407</x><y>242</y><w>726</w><h>55</h></coordinates><panel_attributes>lt=&lt;&lt;-
+verificarDados(dados)
+</panel_attributes><additional_attributes>640;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>913</x><y>275</y><w>22</w><h>33</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>154</x><y>286</y><w>781</w><h>55</h></coordinates><panel_attributes>lt=&lt;.
+"Dados invalidos/CPF já Cadastrado"
+</panel_attributes><additional_attributes>10;20;690;20</additional_attributes></element><element><id>Relation</id><coordinates><x>407</x><y>341</y><w>726</w><h>55</h></coordinates><panel_attributes>lt=&lt;.
+[dadosValidos]dadosValidos()
+</panel_attributes><additional_attributes>10;20;640;20</additional_attributes></element><element><id>Relation</id><coordinates><x>154</x><y>374</y><w>264</w><h>55</h></coordinates><panel_attributes>lt=&lt;&lt;-
+solicitarConfirmaçãoCadastro()
+</panel_attributes><additional_attributes>10;20;220;20</additional_attributes></element><element><id>Relation</id><coordinates><x>154</x><y>407</y><w>264</w><h>55</h></coordinates><panel_attributes>lt=&lt;&lt;-
+confirmado()
+</panel_attributes><additional_attributes>220;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>407</x><y>429</y><w>726</w><h>44</h></coordinates><panel_attributes>lt=&lt;&lt;-
+cadastrarNovoPaciente(dados)</panel_attributes><additional_attributes>640;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>154</x><y>495</y><w>264</w><h>55</h></coordinates><panel_attributes>lt=&lt;.
+"Sucesso paciente cadastrado"
+</panel_attributes><additional_attributes>10;20;220;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>583</x><y>605</y><w>22</w><h>165</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>913</x><y>693</y><w>22</w><h>33</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>924</x><y>682</y><w>209</w><h>55</h></coordinates><panel_attributes>lt=&lt;&lt;-
+erro
+</panel_attributes><additional_attributes>10;20;170;20</additional_attributes></element><element><id>Relation</id><coordinates><x>154</x><y>693</y><w>781</w><h>55</h></coordinates><panel_attributes>lt=&lt;.
+"Dados invalidos ou faltantes"
+</panel_attributes><additional_attributes>10;20;690;20</additional_attributes></element><element><id>Relation</id><coordinates><x>594</x><y>726</y><w>539</w><h>44</h></coordinates><panel_attributes>lt=&lt;.
+[dadosValidos]dadosPaciente</panel_attributes><additional_attributes>10;20;470;20</additional_attributes></element><element><id>Relation</id><coordinates><x>154</x><y>748</y><w>451</w><h>44</h></coordinates><panel_attributes>lt=&lt;-
+exibirResultado(dadosPaciente)</panel_attributes><additional_attributes>10;20;390;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>726</x><y>880</y><w>22</w><h>297</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>396</x><y>836</y><w>22</w><h>55</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>154</x><y>847</y><w>264</w><h>55</h></coordinates><panel_attributes>lt=&lt;&lt;-
+alterarPaciente()
+</panel_attributes><additional_attributes>220;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>407</x><y>858</y><w>341</w><h>55</h></coordinates><panel_attributes>lt=&lt;&lt;-
+abrirAlteração()
+</panel_attributes><additional_attributes>290;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>154</x><y>913</y><w>594</w><h>55</h></coordinates><panel_attributes>lt=&lt;&lt;-
+solicitarNovosDados()
+</panel_attributes><additional_attributes>10;20;520;20</additional_attributes></element><element><id>Relation</id><coordinates><x>154</x><y>946</y><w>594</w><h>55</h></coordinates><panel_attributes>lt=&lt;&lt;-
+informarNovosDados(dados)
+</panel_attributes><additional_attributes>520;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>737</x><y>968</y><w>396</w><h>55</h></coordinates><panel_attributes>lt=&lt;&lt;-
+validarAlteração(dados)
+</panel_attributes><additional_attributes>340;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1111</x><y>990</y><w>22</w><h>176</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>913</x><y>1012</y><w>22</w><h>33</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>924</x><y>1001</y><w>209</w><h>55</h></coordinates><panel_attributes>lt=&lt;&lt;-
+erro
+</panel_attributes><additional_attributes>10;20;170;20</additional_attributes></element><element><id>Relation</id><coordinates><x>154</x><y>1012</y><w>781</w><h>55</h></coordinates><panel_attributes>lt=&lt;.
+"Dados invalidos"
+</panel_attributes><additional_attributes>10;20;690;20</additional_attributes></element><element><id>Relation</id><coordinates><x>737</x><y>1067</y><w>396</w><h>44</h></coordinates><panel_attributes>lt=&lt;.
+[dadosValidos]novosDados</panel_attributes><additional_attributes>10;20;340;20</additional_attributes></element><element><id>Relation</id><coordinates><x>154</x><y>1078</y><w>594</w><h>44</h></coordinates><panel_attributes>lt=&lt;-
+confirmarAlteração()</panel_attributes><additional_attributes>10;20;520;20</additional_attributes></element><element><id>Relation</id><coordinates><x>154</x><y>1100</y><w>594</w><h>55</h></coordinates><panel_attributes>lt=&lt;&lt;-
+alteraçãoConfirmada()
+</panel_attributes><additional_attributes>520;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>737</x><y>1111</y><w>396</w><h>55</h></coordinates><panel_attributes>lt=&lt;&lt;-
+salvarAlteração(novosDados)
+</panel_attributes><additional_attributes>340;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>737</x><y>1144</y><w>396</w><h>44</h></coordinates><panel_attributes>lt=&lt;.
+alteraçãoConcluida</panel_attributes><additional_attributes>10;20;340;20</additional_attributes></element><element><id>Relation</id><coordinates><x>154</x><y>1155</y><w>594</w><h>44</h></coordinates><panel_attributes>lt=&lt;.
+"Alteração de paciente concluida"</panel_attributes><additional_attributes>10;20;520;20</additional_attributes></element><element><id>Relation</id><coordinates><x>33</x><y>561</y><w>1364</w><h>44</h></coordinates><panel_attributes>lt=-
+</panel_attributes><additional_attributes>10;20;1220;20</additional_attributes></element><element><id>Relation</id><coordinates><x>407</x><y>473</y><w>726</w><h>55</h></coordinates><panel_attributes>lt=&lt;.
+pacienteCadastrado()
+</panel_attributes><additional_attributes>10;20;640;20</additional_attributes></element></diagram>

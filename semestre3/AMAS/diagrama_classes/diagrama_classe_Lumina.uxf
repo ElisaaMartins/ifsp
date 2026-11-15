@@ -1,0 +1,76 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>0</x><y>180</y><w>210</w><h>220</h></coordinates><panel_attributes>Profissional
+--
+- id: int
+- nome: string
+- cpf: string
+- data_nasc: date
+- telefone: string
+- email: string
+- senha: int
+- funcao: string
+--
++ cadastrarPaciente()
++ consultarPaciente()
++ alterarPaciente()
++ realizarProcedimento()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>450</x><y>360</y><w>210</w><h>160</h></coordinates><panel_attributes>Agendamento
+--
+- id: int
+- data: date
+- descricao: string
+- status: string
+--
++ registrarAgendamento()
++ consultarAgendamento()
++ alterarAgendamento()
++ cancelarAgendamento()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>840</x><y>260</y><w>210</w><h>140</h></coordinates><panel_attributes>Procedimento
+--
+- id: int
+- duracao: double
+- descricao: string
+- valor: double
+--
++ registrarProcedimento()
++ consultarProcedimento()
++ alterarProcedimento()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>480</y><w>210</w><h>180</h></coordinates><panel_attributes>Paciente
+--
+- id: int
+- nome: string
+- cpf: string
+- data_nasc: date
+- telefone: string
+- data_primeiro_agend: date
+- data_ultimo_agend: date
+--
++ solicitarAgendamento()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>850</x><y>550</y><w>210</w><h>160</h></coordinates><panel_attributes>Produto
+--
+-id: int
+- nome: string
+- descricao: string
+- qtd_estoque: int
+- data_validade: date
+--
++ registrarProduto()
++ consultarProduto()
++ alterarProduto()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>950</x><y>390</y><w>40</w><h>180</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=1
+m2=*</panel_attributes><additional_attributes>10;10;10;160</additional_attributes></element><element><id>UMLClass</id><coordinates><x>970</x><y>0</y><w>210</w><h>170</h></coordinates><panel_attributes>Pagamento
+--
+- id: int
+- descricao: string
+- data_pagamento: date
+- valor: double
+- forma_pagamento: string
+- status: boolean
+--
++ registrarPagamento()
++ consultarPagamento()
++ alterarPagamento()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>960</x><y>160</y><w>120</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;.
+m1=1
+m2=1</panel_attributes><additional_attributes>100;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>200</x><y>290</y><w>270</w><h>160</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=*</panel_attributes><additional_attributes>10;10;250;140</additional_attributes></element><element><id>Relation</id><coordinates><x>200</x><y>440</y><w>270</w><h>160</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=*</panel_attributes><additional_attributes>10;140;250;10</additional_attributes></element><element><id>Relation</id><coordinates><x>650</x><y>310</y><w>210</w><h>140</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=1</panel_attributes><additional_attributes>10;120;190;10</additional_attributes></element></diagram>

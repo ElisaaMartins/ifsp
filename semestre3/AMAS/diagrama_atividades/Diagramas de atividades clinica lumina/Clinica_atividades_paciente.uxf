@@ -1,0 +1,43 @@
+<diagram program="umletino" version="15.1"><zoom_level>9</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLObject</id><coordinates><x>0</x><y>0</y><w>270</w><h>1044</h></coordinates><panel_attributes>USÚARIO
+valign=top</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>72</x><y>108</y><w>108</w><h>45</h></coordinates><panel_attributes>Consultar cadastro
+ do paciente
+bg=red</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>171</x><y>117</y><w>234</w><h>27</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>240;10;10;10</additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>117</x><y>36</y><w>18</w><h>18</h></coordinates><panel_attributes>type=initial</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>576</x><y>666</y><w>108</w><h>45</h></coordinates><panel_attributes>Consultar
+paciente
+[FA02]
+bg=red</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>315</x><y>666</y><w>117</w><h>45</h></coordinates><panel_attributes>Cadastrar novo
+paciente
+[FA01]
+bg=red</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>360</x><y>702</y><w>162</w><h>216</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>160;220;160;180;10;180;10;10</additional_attributes></element><element><id>UMLState</id><coordinates><x>441</x><y>900</y><w>126</w><h>63</h></coordinates><panel_attributes>Apresentar novamente 
+os pacientes
+cadastrados
+bg=red</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>441</x><y>666</y><w>117</w><h>45</h></coordinates><panel_attributes>Alterar
+informações
+[FA03]
+bg=red</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>495</x><y>702</y><w>27</w><h>216</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;220;10;10</additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>495</x><y>1008</y><w>18</w><h>18</h></coordinates><panel_attributes>type=final</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>495</x><y>954</y><w>27</w><h>72</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>387</x><y>99</y><w>108</w><h>63</h></coordinates><panel_attributes>bg=green
+type=decision
+CPF encontrado?</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>387</x><y>207</y><w>117</w><h>54</h></coordinates><panel_attributes>Direciona para 
+operação
+de cadastro
+bg=red</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>378</x><y>324</y><w>126</w><h>45</h></coordinates><panel_attributes>Apresentar
+paciente e as
+operações disponíveis
+bg=red</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>369</x><y>477</y><w>135</w><h>63</h></coordinates><panel_attributes>Operação escolhida
+bg=green
+type=decision</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>378</x><y>405</y><w>126</w><h>45</h></coordinates><panel_attributes>Direcionar para
+opção escolhida
+bg=red</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>432</x><y>441</y><w>27</w><h>54</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;40;10;10</additional_attributes></element><element><id>UMLState</id><coordinates><x>72</x><y>369</y><w>108</w><h>45</h></coordinates><panel_attributes>Escolher operação
+bg=red</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>117</x><y>405</y><w>279</w><h>45</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>290;30;10;30;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>117</x><y>333</y><w>279</w><h>54</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;40;10;10;290;10</additional_attributes></element><element><id>Relation</id><coordinates><x>162</x><y>495</y><w>234</w><h>99</h></coordinates><panel_attributes>lt=&lt;-
+m1=[Alterar]</panel_attributes><additional_attributes>10;90;10;10;240;10</additional_attributes></element><element><id>Relation</id><coordinates><x>90</x><y>495</y><w>306</w><h>99</h></coordinates><panel_attributes>lt=&lt;-
+m1=[Cadastrar]</panel_attributes><additional_attributes>10;90;10;10;320;10</additional_attributes></element><element><id>Relation</id><coordinates><x>117</x><y>45</y><w>27</w><h>81</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;70;10;10</additional_attributes></element><element><id>UMLObject</id><coordinates><x>270</x><y>0</y><w>477</w><h>1044</h></coordinates><panel_attributes>SISTEMA
+valign=top</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>81</x><y>576</y><w>108</w><h>45</h></coordinates><panel_attributes>Digitar dados válidos
+bg=red</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>432</x><y>153</y><w>54</w><h>72</h></coordinates><panel_attributes>lt=&lt;-
+  Não</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>171</x><y>216</y><w>234</w><h>36</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>10;20;240;20</additional_attributes></element><element><id>UMLState</id><coordinates><x>72</x><y>207</y><w>108</w><h>45</h></coordinates><panel_attributes>Cadastrar novo 
+paciente
+bg=red</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>27</x><y>216</y><w>72</w><h>396</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>60;420;10;420;10;10;50;10</additional_attributes></element><element><id>Relation</id><coordinates><x>486</x><y>126</y><w>153</w><h>234</h></coordinates><panel_attributes>lt=&lt;-
+ Sim</panel_attributes><additional_attributes>20;240;130;240;130;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>495</x><y>702</y><w>144</w><h>216</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;220;10;180;140;180;140;10</additional_attributes></element><element><id>Relation</id><coordinates><x>486</x><y>495</y><w>225</w><h>189</h></coordinates><panel_attributes>lt=&lt;-
+m1=[Consultar]</panel_attributes><additional_attributes>170;190;170;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>90</x><y>612</y><w>243</w><h>108</h></coordinates><panel_attributes>lt=&lt;-
+m1=[Cadastrar]</panel_attributes><additional_attributes>250;90;10;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>162</x><y>612</y><w>405</w><h>72</h></coordinates><panel_attributes>lt=&lt;-
+m1=[Alterar]</panel_attributes><additional_attributes>380;60;380;30;10;30;10;10</additional_attributes></element><element><id>UMLSyncBarHorizontal</id><coordinates><x>360</x><y>855</y><w>270</w><h>18</h></coordinates><panel_attributes>lw=5
+</panel_attributes><additional_attributes></additional_attributes></element></diagram>

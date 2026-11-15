@@ -1,0 +1,56 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>810</x><y>500</y><w>210</w><h>130</h></coordinates><panel_attributes>Fornecedor
+--
+- codigo: int
+- razao: string
+- endereco: string
+- principal: boolean
+--
++ get()
++ set()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>810</x><y>190</y><w>210</w><h>150</h></coordinates><panel_attributes>Placa
+--
+- codigo: int
+- descricao: string
+- valor: double
+- material: string
+- data_cadastro: date
+--
++ get()
++ set()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>910</x><y>330</y><w>30</w><h>190</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;170</additional_attributes></element><element><id>UMLClass</id><coordinates><x>390</x><y>190</y><w>210</w><h>150</h></coordinates><panel_attributes>Carro
+--
+- codigo: int
+- modelo: string
+- cor: string
+- km: int
+- ano: int
+--
++ get()
++ set()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>590</x><y>240</y><w>240</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;220;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>370</x><y>450</y><w>210</w><h>150</h></coordinates><panel_attributes>Pessoa
+--
+# codigo: int
+# nome: string
+# idade: int
+#cpf: string
+--
++ get()
++ set()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>520</x><y>700</y><w>210</w><h>130</h></coordinates><panel_attributes>Funcionario
+--
+- salario: double
+- departamento: string
+- gerente: boolean
+--
++ get()
++ set()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>190</x><y>710</y><w>210</w><h>130</h></coordinates><panel_attributes>Cliente
+--
+- cliente_fidelidade: boolean 
+- dat_ultima_compra: date
+--
++ get()
++ set()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>470</x><y>590</y><w>170</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;150;110</additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>590</y><w>200</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>180;10;10;120</additional_attributes></element><element><id>UMLClass</id><coordinates><x>70</x><y>80</y><w>210</w><h>150</h></coordinates><panel_attributes>Estoque
+--
+- codigo: int
+- data_entrada: string
+- data_saida: string
+- quantidade: int
+--
++ get()
++ set()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>150</y><w>140</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;120;110</additional_attributes></element><element><id>Relation</id><coordinates><x>460</x><y>330</y><w>30</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element></diagram>

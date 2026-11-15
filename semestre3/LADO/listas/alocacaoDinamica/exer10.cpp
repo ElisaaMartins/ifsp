@@ -71,6 +71,7 @@ int main(){
         cout << endl;
     }
 
+    cout << endl;
 
     // imprimindo
     cout << "==== OS 3 MAIORES ====" << endl;
